@@ -4,10 +4,15 @@ Professional Web Development using an open-source DXP
 Techno used :
 
 repository : github
+
 local dev : docker compose service : DB, redis, mailcatcher
+
 CI : github actions
+
 web : eZ platform and Ibexa
+
 API : GraphQL
+
 sh : Platform.sh
 
 To do :
