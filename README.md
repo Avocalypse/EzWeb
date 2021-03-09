@@ -15,7 +15,14 @@ API : GraphQL
 
 sh : Platform.sh
 
-To do :
+# How to start
+## Before starting
+You should install docker, symfony and php
+
+## How to run the project
+to run everything : run the *make* command
+
+# Requirements :
 
 - Project must be on a Git*
 - Use Docker Compose for local dev using (at least) services: DB, Redis, MailCatcher

@@ -1,3 +1,5 @@
-all:
-	cd symfonyServer
-	symfony serve
+all:	docker
+	cd symfonyServer; symfony serve
+
+docker:
+	docker-compose up -d
