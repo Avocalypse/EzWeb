@@ -1,0 +1,53 @@
+language: php
+
+php:
+  - nightly
+
+before_install:
+  ### install docker engine ###
+  - sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  - "echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null"
+  - sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+  ### install docker compose ###
+  - sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  - sudo chmod +x /usr/local/bin/docker-compose
+  - sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+  
+  # ### install php & composer ###
+  # # - sudo apt install php-cli unzip
+  # - cd ~; curl -sS https://getcomposer.org/installer -o composer-setup.php
+  # # - php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+  # - sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+  ### install yarn ###
+  - sudo apt-get install nodejs npm
+  - npm install -g yarn
+
+env:
+  MYSQL_DATABASE=ezweb_mysql
+  MYSQL_USER=user
+  MYSQL_PASSWORD=password
+  MYSQL_ROOT_PASSWORD=password
+  MYSQL_EXPOSED_PORT=3306
+
+install:
+  - make
+
+addons:
+  apt:
+    update: true
+    packages:
+      make
+      # php
+      # libapache2-mod-php
+
+

@@ -2,6 +2,7 @@ all:	init	run
 
 init:	docker
 	cd website-skeleton; yarn
+	cd website-skeleton; composer install
 	cd website-skeleton; php bin/console ibexa:install
 	cd website-skeleton; php bin/console ibexa:graphql:generate-schema
 	cd website-skeleton; composer run post-install-cmd

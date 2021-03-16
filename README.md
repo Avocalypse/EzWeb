@@ -22,7 +22,7 @@ sh : Platform.sh
 - Install docker engine : *https://docs.docker.com/engine/install/ubuntu/*
 - Install docker-compose : *https://docs.docker.com/compose/install/*
 - Install make : *sudo apt install make*
-- Install php : *sudo apt install php-mysql*
+- Install php : *sudo apt install php libapache2-mod-php*
 - Install composer
 - Install yarn : with npm for example : *sudo npm install -g yarn*
 
