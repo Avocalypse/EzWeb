@@ -1,5 +1,5 @@
 all:	docker
-	cd symfonyServer; symfony serve
+	cd website-skeleton; symfony serve
 
 docker:
-	docker-compose up -d
+	cd provisioning/dev; sudo docker-compose up -d

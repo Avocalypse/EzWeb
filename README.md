@@ -16,11 +16,16 @@ API : GraphQL
 sh : Platform.sh
 
 # How to start
-## Before starting
-You should install docker, symfony and php
+## Before starting :
+Install symfony : *https://symfony.com/download*
+Install docker engine : *https://docs.docker.com/engine/install/ubuntu/*
+Install docker-compose : *https://docs.docker.com/compose/install/*
+
+Maybe : (You should also install php and composer)
 
 ## How to run the project
-to run everything : run the *make* command
+To run everything : run the *make* command
+Then, you just have to go on *http://localhost:8000* on your browser to start the project !
 
 # Requirements :
 

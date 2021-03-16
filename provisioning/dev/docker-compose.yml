@@ -1,0 +1,35 @@
+version: '3.3'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: ezweb_mysql
+    restart: on-failure
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - ${MYSQL_EXPOSED_PORT}:3306
+    expose:
+      - ${MYSQL_EXPOSED_PORT}
+    volumes:
+      - 'mysql-volume:/var/lib/ezweb_mysql/data'
+
+  redis:
+    image: redis:alpine
+    container_name: ezweb_redis
+    ports:
+      - "6379:6379"
+    restart: on-failure
+
+  mailcatcher:
+    image: dockage/mailcatcher:0.7.1
+    container_name: ezweb_mailcatcher
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+    restart: on-failure
+  
+volumes:
+  mysql-volume:
