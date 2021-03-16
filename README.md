@@ -24,6 +24,7 @@ Install docker-compose : *https://docs.docker.com/compose/install/*
 Maybe : (You should also install php and composer)
 
 ## How to run the project
+Create a .env file in the ./provisioning/dev directory (you can copy the .env.example)
 To run everything : run the *make* command
 Then, you just have to go on *http://localhost:8000* on your browser to start the project !
 
