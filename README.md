@@ -17,16 +17,20 @@ sh : Platform.sh
 
 # How to start
 ## Before starting :
-Install symfony : *https://symfony.com/download*
+Install symfony : *https://symfony.com/download*, You should export your symfony path to use it everywhere : *export PATH="$HOME/.symfony/bin:$PATH"*
 Install docker engine : *https://docs.docker.com/engine/install/ubuntu/*
 Install docker-compose : *https://docs.docker.com/compose/install/*
+Install make
 
-Maybe : (You should also install php and composer)
+You should also install php and composer
+
+Create a file call '.env' in the ./provisioning/dev directory (you can copy the .env.example)
+Do the same thing inside the website-skeleton directory
 
 ## How to run the project
-Create a .env file in the ./provisioning/dev directory (you can copy the .env.example)
-To run everything : run the *make* command
-Then, you just have to go on *http://localhost:8000* on your browser to start the project !
+- To run everything : run the *make* command (*make will also start db, redis, and mail catcher docker containers. The command will crash if one of the container port is already in use : In that case, you should kill the process behind those port, or change the containers port inside the .env file.*)
+- Then, you just have to go on *http://localhost:8000* on your browser to start the project !
+- You were hable to found an admin interface at *http://localhost:8000/admin/dashboard*
 
 # Requirements :
 
