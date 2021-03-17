@@ -17,7 +17,7 @@ env:
   PROJECTPORTPREFIX=42
   APP_ENV=dev
   APP_SECRET=73811737aa25c76ad958d30f6c162ee3
-  DATABASE_URL="mysql://user:password@127.0.0.1:42306/ezweb_mysql?serverVersion=5.7"
+  DATABASE_URL="mysql://user:password@127.0.0.1:42306/ezweb_mysql_dev?serverVersion=5.7"
   MAILER_URL=null://localhost
   JWT_SECRET_KEY=%kernel.project_dir%/config/jwt/private.pem
   JWT_PUBLIC_KEY=%kernel.project_dir%/config/jwt/public.pem
