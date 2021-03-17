@@ -11,6 +11,8 @@ before_install:
   ### install yarn ###
   - sudo apt-get install nodejs npm
   - npm install -g yarn
+  - echo "node version :"
+  - node --version
 
 env:
   PROJECTPORTPREFIX=42
