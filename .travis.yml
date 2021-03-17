@@ -14,7 +14,7 @@ before_install:
   - npm install -g yarn
   - echo "node version :"
   - node --version
-  - sudo n stable
+  - n stable
   - node --version
 
 env:
