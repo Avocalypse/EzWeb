@@ -4,6 +4,9 @@ language: php
 php:
   - nightly
 
+node:
+  - '12.18.1'
+
 services:
   - docker
 
