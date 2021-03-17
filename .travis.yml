@@ -10,8 +10,11 @@ services:
 before_install:
   ### install yarn ###
   - sudo apt-get install nodejs npm
+  - npm install -g n
   - npm install -g yarn
   - echo "node version :"
+  - node --version
+  - sudo n stable
   - node --version
 
 env:
