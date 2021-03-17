@@ -27,17 +27,22 @@ sh : Platform.sh
 - Install yarn : with npm for example : *sudo npm install -g yarn*
 
 ### Create .env files
-- Create a file call '.env' in the ./provisioning/dev directory (you can copy the .env.example)
-- Do the same thing inside the website-skeleton directory
+- Create a file call '.env' in the website-skeleton directory (you can copy the .env.example)
+- If you want to use the dev docker containers to provide a database, a redis and a mail catcher services, do the same thing inside the ./provisioning/dev directory (you can copy the .env.example)
+- (*optional*) if you want to use another database, you have to go to the website-skeleton .env file, and change this line : 
+
+```
+# EZWEB/website-skeleton/.env
+DATABASE_URL="mysql://user:password@127.0.0.1:42306/ezweb_mysql?serverVersion=5.7"
+```
 
 ## How to run the project
 - To run everything : run the *make* command (*make will also start db, redis, and mail catcher docker containers. The command will crash if one of the container port is already in use : In that case, you should kill the process behind those port, or change the containers port inside the .env file.*)
 - Then, you just have to go on *http://localhost:8000* on your browser to start the project !
-- You were hable to found an admin interface at *http://localhost:8000/admin/dashboard*
+- You were hable to found an admin interface at *http://localhost:8000/admin/dashboard* (login : admin, password : publish)
 - If you want only to run the project, you can do a *make run*
 
 # Requirements :
-
 - Project must be on a Git*
 - Use Docker Compose for local dev using (at least) services: DB, Redis, MailCatcher
 - Project must be installable easily
