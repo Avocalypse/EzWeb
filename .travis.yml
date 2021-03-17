@@ -4,15 +4,13 @@ language: php
 php:
   - nightly
 
-node_js:
-  - '12.18.1'
-
 services:
   - docker
 
 before_install:
   ### install yarn ###
-  - sudo apt-get install nodejs npm
+  - sudo apt-get install npm
+  - npm cache clean -f
   - sudo npm install -g n
   - sudo npm install -g yarn
   - echo "node version :"
