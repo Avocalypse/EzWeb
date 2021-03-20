@@ -1,7 +1,7 @@
 all:	init	run
 
 init:	docker
-	cd website-skeleton; npm i
+	cd website-skeleton; yarn
 	cd website-skeleton; composer update
 	cd website-skeleton; composer install
 	cd website-skeleton; php bin/console ibexa:install
