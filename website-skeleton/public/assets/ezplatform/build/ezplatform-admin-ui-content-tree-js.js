@@ -1594,7 +1594,7 @@ var mapChildrenToSubitems = function mapChildrenToSubitems(location) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/sneakoa/Work/web/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/content-tree/content.tree.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/content-tree/content.tree.module.js");
+module.exports = __webpack_require__(/*! /home/martin/Dev/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/content-tree/content.tree.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/content-tree/content.tree.module.js");
 
 
 /***/ }),
