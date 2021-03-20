@@ -47,7 +47,7 @@ disk: 2048
 #         source_path: private
 
 
-# The configuration of app when it is exposed to the web.
+# The configuration of app when it is exposed to the web
 web:
     commands:
         start: make run
