@@ -1,6 +1,0 @@
-db:
-  type: mysql:5.7
-  disk: 256
-
-cache:
-  type: redis:6.0
