@@ -11,7 +11,7 @@ before_install:
   - nvm install 14.4.0
   - cp website-skeleton/.env.example website-skeleton/.env
   - wget https://get.symfony.com/cli/installer -O - | bash
-  - mv /home/travis/.symfony/bin/symfony /usr/local/bin/symfony
+  - sudo mv /home/travis/.symfony/bin/symfony /usr/local/bin/symfony
 
 env:
   PROJECTPORTPREFIX=42
