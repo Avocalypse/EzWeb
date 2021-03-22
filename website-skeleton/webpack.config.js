@@ -34,10 +34,10 @@ Encore.addEntry('welcome_page', [
     path.resolve(__dirname, './assets/scss/welcome-page.scss'),
 ]);
 
-Encore.addEntry('app', './assets/app.js');
+//Encore.addEntry('app', './assets/app.js');
 
-const projectConfig = Encore.getWebpackConfig();
-module.exports = [ eZConfig, ...customConfigs, projectConfig ];
+//const projectConfig = Encore.getWebpackConfig();
+//module.exports = [ eZConfig, ...customConfigs, projectConfig ];
 
 // uncomment this line if you've commented-out the above lines
-// module.exports = [ eZConfig, ...customConfigs ];
+module.exports = [ eZConfig, ...customConfigs ];

@@ -69,6 +69,11 @@ ezplatform:
     # TIP: For multisite installations organize shared config into SiteAccess groups,
     #      on single-site you can place shared config under "default" for simplicity as shown below.
     system:
+        site:
+            languages: [eng-GB]
+            user_registration:
+                templates:
+                    confirmation: user/registration_confirmation.html.twig
         default:
             # Cache pool service, needs to be different per repository (database) on multi repository install.
             cache_service_name: '%cache_pool%'
@@ -84,9 +89,6 @@ ezplatform:
             http_cache:
                 purge_servers: ['%purge_server%']
                 varnish_invalidate_token: '%varnish_invalidate_token%'
-
-        site:
-            languages: [eng-GB]
 
     url_alias:
         slug_converter:
