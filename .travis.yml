@@ -2,7 +2,7 @@
 language: php
 
 php:
-  - nightly
+  - '7.3'
 
 services:
   - docker
@@ -13,6 +13,7 @@ before_install:
   # - sudo apt-get install npm
   # - npm install -g yarn
   # - echo "node version :"
+  - nvm install 14.4.0
   - node --version
 
 env:
