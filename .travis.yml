@@ -10,13 +10,13 @@ services:
 before_install:
   - nvm install 14.4.0
   - cp website-skeleton/.env.example website-skeleton/.env
+  - cd website-skeleton; composer require symfony/framework-bundle:${SYMFONY_VERSION}; cd -
 
 env:
   PROJECTPORTPREFIX=42
   SYMFONY_VERSION="4.23.2"
 
 install:
-  - composer require symfony/framework-bundle:${SYMFONY_VERSION}
   - make
 
 addons:
