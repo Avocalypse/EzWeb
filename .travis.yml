@@ -10,10 +10,8 @@ services:
 before_install:
   - nvm install 14.4.0
   - cp website-skeleton/.env.example website-skeleton/.env
-  - cd website-skeleton; composer require symfony/framework-bundle:${SYMFONY_VERSION}; cd -
-  - ls -la; cd ..; ls -la; cd ..; ls -la; cd ..; ls -la
   - wget https://get.symfony.com/cli/installer -O - | bash
-  - mv /home/Avocalypse/.symfony/bin/symfony /usr/local/bin/symfony
+  - mv /home/travis/.symfony/bin/symfony /usr/local/bin/symfony
 
 env:
   PROJECTPORTPREFIX=42
