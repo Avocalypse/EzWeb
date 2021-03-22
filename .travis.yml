@@ -9,7 +9,7 @@ services:
 
 before_install:
   - nvm install 14.4.0
-  - cd website-skeleton; cp .env.example .env
+  - cp website-skeleton/.env.example website-skeleton/.env
 
 env:
   PROJECTPORTPREFIX=42
