@@ -74,6 +74,12 @@ ezplatform:
             user_registration:
                 templates:
                     confirmation: user/registration_confirmation.html.twig
+            content_view:
+                full:
+                    home_page:
+                        template: full/home_page.html.twig
+                        match:
+                            Id\Location: 2
         default:
             # Cache pool service, needs to be different per repository (database) on multi repository install.
             cache_service_name: '%cache_pool%'
