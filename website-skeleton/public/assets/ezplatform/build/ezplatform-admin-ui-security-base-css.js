@@ -29,8 +29,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/martin/Dev/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/scss/ezplatform-bootstrap.scss */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/scss/ezplatform-bootstrap.scss");
-module.exports = __webpack_require__(/*! /home/martin/Dev/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/scss/ezplatform.scss */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/scss/ezplatform.scss");
+__webpack_require__(/*! /home/kara/test/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/scss/ezplatform-bootstrap.scss */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/scss/ezplatform-bootstrap.scss");
+module.exports = __webpack_require__(/*! /home/kara/test/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/scss/ezplatform.scss */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/scss/ezplatform.scss");
 
 
 /***/ })
