@@ -5,6 +5,7 @@ ezplatform:
                 - eng-GB
             user_registration:
                 templates:
+                    form: user/registration_form.html.twig
                     confirmation: user/registration_confirmation.html.twig
             content_view:
                 full:
