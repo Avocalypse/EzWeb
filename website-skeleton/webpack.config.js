@@ -29,12 +29,7 @@ Encore
     })
 ;
 
-// Welcome page stylesheets
-Encore.addEntry('welcome_page', [
-    path.resolve(__dirname, './assets/scss/welcome-page.scss'),
-]);
-
-// Encore.addEntry('app', './assets/app.js');
+Encore.addEntry('app', './assets/app.js');
 Encore
     .addStyleEntry('tutorial', [
         path.resolve(__dirname, './assets/css/normalize.css'),
@@ -46,8 +41,8 @@ Encore
         path.resolve(__dirname, './assets/js/bootstrap.min.js')
     ]);
 
-//const projectConfig = Encore.getWebpackConfig();
-//module.exports = [ eZConfig, ...customConfigs, projectConfig ];
+const projectConfig = Encore.getWebpackConfig();
+module.exports = [ eZConfig, ...customConfigs, projectConfig ];
 
 // uncomment this line if you've commented-out the above lines
-module.exports = [ eZConfig, ...customConfigs ];
+// module.exports = [ eZConfig, ...customConfigs ];
