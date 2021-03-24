@@ -58,9 +58,9 @@ ezplatform:
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
-        list: [site, fre]
+        list: [site]
         groups:
-            site_group: [site, fre]
+            site_group: [site]
         default_siteaccess: site
         match:
             URIElement: 1
@@ -69,13 +69,6 @@ ezplatform:
     # TIP: For multisite installations organize shared config into SiteAccess groups,
     #      on single-site you can place shared config under "default" for simplicity as shown below.
     system:
-        fre:
-            languages:
-                - fre-FR
-                - eng-GB
-            user_registration:
-                templates:
-                    confirmation: user/registration_confirmation.html.twig
         default:
             # Cache pool service, needs to be different per repository (database) on multi repository install.
             cache_service_name: '%cache_pool%'
