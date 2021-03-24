@@ -4415,7 +4415,7 @@ SubItemsModule.defaultProps = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/kara/ProjetMaster/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/sub-items/sub.items.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/sub-items/sub.items.module.js");
+module.exports = __webpack_require__(/*! /home/martin/Dev/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/sub-items/sub.items.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/sub-items/sub.items.module.js");
 
 
 /***/ }),
