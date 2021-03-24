@@ -7644,11 +7644,11 @@ eZ.addConfig('modules.UniversalDiscovery', UniversalDiscoveryModule);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kara/test/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/browse.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/browse.tab.module.js");
-__webpack_require__(/*! /home/kara/test/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/bookmarks.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/bookmarks.tab.module.js");
-__webpack_require__(/*! /home/kara/test/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/search.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/search.tab.module.js");
-__webpack_require__(/*! /home/kara/test/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/content.create.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/content.create.tab.module.js");
-module.exports = __webpack_require__(/*! /home/kara/test/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/content.edit.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/content.edit.tab.module.js");
+__webpack_require__(/*! /home/martin/Dev/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/browse.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/browse.tab.module.js");
+__webpack_require__(/*! /home/martin/Dev/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/bookmarks.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/bookmarks.tab.module.js");
+__webpack_require__(/*! /home/martin/Dev/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/search.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/search.tab.module.js");
+__webpack_require__(/*! /home/martin/Dev/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/content.create.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/content.create.tab.module.js");
+module.exports = __webpack_require__(/*! /home/martin/Dev/EzWeb/website-skeleton/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/content.edit.tab.module.js */"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/universal-discovery/content.edit.tab.module.js");
 
 
 /***/ }),

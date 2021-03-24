@@ -1,0 +1,20 @@
+<tr>
+    <td>
+        <a href="{{ path( "ez_urlalias", { 'locationId': content.contentInfo.mainLocationId } ) }}"
+           target="_self">
+            <strong>
+                {{ content.name }}
+            </strong>
+            {% if not ez_field_is_empty( content, 'photo' ) %}
+                {{ ez_render_field(content, 'photo', {
+                    'parameters': {
+                        'alias': 'ride_list'
+                    }
+                }) }}
+            {% endif %}
+        </a>
+    </td>
+    <td>
+        <p>{{ ez_render_field( content, 'description' ) }}</p>
+    </td>
+</tr>

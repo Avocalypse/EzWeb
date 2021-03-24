@@ -1,15 +1,15 @@
 {
   "entrypoints": {
-    "ezplatform-admin-ui-modal-location-trash-js": {
-      "js": [
-        "/assets/ezplatform/build/runtime.js",
-        "/assets/ezplatform/build/ezplatform-admin-ui-modal-location-trash-js.js"
-      ]
-    },
     "ezplatform-richtext-onlineeditor-js": {
       "js": [
         "/assets/ezplatform/build/runtime.js",
         "/assets/ezplatform/build/ezplatform-richtext-onlineeditor-js.js"
+      ]
+    },
+    "ezplatform-admin-ui-layout-js": {
+      "js": [
+        "/assets/ezplatform/build/runtime.js",
+        "/assets/ezplatform/build/ezplatform-admin-ui-layout-js.js"
       ]
     },
     "ezplatform-admin-ui-bookmark-list-js": {
@@ -138,10 +138,10 @@
         "/assets/ezplatform/build/ezplatform-admin-ui-location-view-js.js"
       ]
     },
-    "ezplatform-admin-ui-layout-js": {
+    "ezplatform-admin-ui-modal-location-trash-js": {
       "js": [
         "/assets/ezplatform/build/runtime.js",
-        "/assets/ezplatform/build/ezplatform-admin-ui-layout-js.js"
+        "/assets/ezplatform/build/ezplatform-admin-ui-modal-location-trash-js.js"
       ]
     },
     "ezplatform-admin-ui-modal-location-trash-container-js": {
