@@ -17,6 +17,9 @@
             {% for ride in rides.currentPageResults %}
                 {{ render( controller( 'ez_content::viewAction', { 'location': ride.valueObject, 'viewType': 'line' } )) }}
             {% endfor %}
+            {% for ride in rides.currentPageResults %}
+                {{ render( controller( 'ez_content::viewAction', { 'location': ride.valueObject, 'viewType': 'line' } )) }}
+            {% endfor %}
             </tbody>
         </table>
         {% if rides.haveToPaginate() %}
