@@ -69,8 +69,6 @@ ezplatform:
     # TIP: For multisite installations organize shared config into SiteAccess groups,
     #      on single-site you can place shared config under "default" for simplicity as shown below.
     system:
-        site:
-            languages: [eng-GB]
         fre:
             languages:
                 - fre-FR

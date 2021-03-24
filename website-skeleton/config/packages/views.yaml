@@ -1,7 +1,6 @@
 ezplatform:
     system:
         site:
-            languages: [eng-GB]
             user_registration:
                 templates:
                     confirmation: user/registration_confirmation.html.twig
