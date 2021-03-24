@@ -58,9 +58,9 @@ ezplatform:
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
-        list: [site]
+        list: [site, fre]
         groups:
-            site_group: [site]
+            site_group: [site, fre]
         default_siteaccess: site
         match:
             URIElement: 1
@@ -71,6 +71,10 @@ ezplatform:
     system:
         site:
             languages: [eng-GB]
+        fre:
+            languages:
+                - fre-FR
+                - eng-GB
             user_registration:
                 templates:
                     confirmation: user/registration_confirmation.html.twig
